@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Browse our book catalog" />
+    <meta name="keywords" content="Catalog, Books, Library" />
+    <meta name="author" content="Danil Zozulia" />
+    <meta http-equiv="refresh" content="600" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalog - MyLib</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="page">
+    <div class="container">
+      <header class="header">
+        <a class="logo" href="index.html">MyLib</a>
+        <nav class="header__nav">
+          <div class="dropdown">
+            <a class="header__link" href="profile.html">Profile</a>
+            <div class="dropdown__menu">
+              <a href="./profile.html">Settings</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="main">
+        <h1 class="main__title">Catalog</h1>
+
+        <div class="catalog-grid">
+          <aside class="filters section">
+            <h2 class="section__title">Filters</h2>
+            <form class="filters__form" id="catalogFilters">
+              <div class="filter-group">
+                <label for="catalogGenre">Genre</label>
+                <select id="catalogGenre" class="form-input">
+                  <option value="">All Genres</option>
+                  <option value="fiction">Fiction</option>
+                  <option value="fantasy">Fantasy</option>
+                  <option value="mystery">Mystery</option>
+                  <option value="romance">Romance</option>
+                  <option value="sci-fi">Sci-Fi</option>
+                  <option value="nonfiction">Non-Fiction</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label for="catalogYear">Publication Year</label>
+                <select id="catalogYear" class="form-input">
+                  <option value="">All Years</option>
+                  <option value="2020-2025">2020-2025</option>
+                  <option value="2010-2019">2010-2019</option>
+                  <option value="2000-2009">2000-2009</option>
+                  <option value="before-2000">Before 2000</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label for="catalogLanguage">Language</label>
+                <select id="catalogLanguage" class="form-input">
+                  <option value="">All Languages</option>
+                  <option value="english">English</option>
+                  <option value="spanish">Spanish</option>
+                  <option value="french">French</option>
+                  <option value="german">German</option>
+                </select>
+              </div>
+              <button type="submit" class="btn">Apply Filters</button>
+            </form>
+          </aside>
+
+          <section class="catalog-results section">
+            <div class="catalog-search">
+              <form class="catalog-search__form">
+                <input
+                  type="text"
+                  id="catalogSearch"
+                  placeholder="Search by title or author"
+                  class="form-input catalog-search__input"
+                />
+                <button type="submit" class="search">Search</button>
+              </form>
+            </div>
+            <h2 class="section__title">Result:</h2>
+            <div class="recommended__wrapper">
+              <ul
+                class="recommended__list catalog-list"
+                id="popularBooksList"
+              ></ul>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer__content">
+          <div class="footer__column">
+            <h4 class="footer__title">MyLib</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">About Us</a></li>
+              <li>
+                <a
+                  href="https://www.yakaboo.ua/faq?srsltid=AfmBOopPAo-_k2o_8tyxQzv33578wklR_v4r9LDgLUZ9xo0mNC3uznJg"
+                  class="footer__link"
+                  >FAQ</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer__link">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__title">Contact</h4>
+            <ul class="footer__list">
+              <li>
+                Email:
+                <a href="mailto:support@mylib.com" class="footer__link"
+                  >support@mylib.com</a
+                >
+              </li>
+              <li>Phone: +1 234 567 890</li>
+              <li>Location: Booktown, USA</li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__title">Follow Us</h4>
+            <ul class="footer__list footer__socials">
+              <li>
+                <a href="https://www.facebook.com/" class="footer__link"
+                  >Facebook</a
+                >
+              </li>
+              <li><a href="https://x.com/" class="footer__link">Twitter</a></li>
+              <li>
+                <a href="https://www.instagram.com/" class="footer__link"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>© 2025 MyLib. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/js/bookRender.js"></script>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Read any book you want!" />
+    <meta name="keywords" content="Book, Read, Online, EBook, Library" />
+    <meta name="author" content="Danil Zozulia" />
+    <meta http-equiv="refresh" content="600" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Catalog - MyLib</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="page">
+    <div class="container">
+      <header class="header">
+        <a class="logo" href="index.html">MyLib</a>
+        <a href="./search.html" class="header__link"> Search </a>
+        <nav class="header__nav">
+          <div class="dropdown">
+            <a class="header__link" href="profile.html">Profile</a>
+            <div class="dropdown__menu">
+              <a href="./profile.html">Settings</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="main">
+        <div class="stats-grid">
+          <div class="video-wrapper">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/JSTolV-kRe4?si=pU8FzqsCeDlEZLwA"
+              title="5 Reasons Why Reading Books Is Good for Your Mental Health"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="right-column">
+            <aside class="quote">
+              <h3 class="quote__title">Today’s Quote</h3>
+              <p class="quote__description">
+                “There is more treasure in books than in all the pirate’s loot
+                on Treasure Island.”
+              </p>
+              <p class="quote__author">- Walt Disney</p>
+            </aside>
+
+            <section class="stats section">
+              <h2 class="section__title">Daily Top Users</h2>
+              <table class="stats__table">
+                <tr>
+                  <td>#1</td>
+                  <td>booklover123</td>
+                  <td>198 pages</td>
+                </tr>
+                <tr>
+                  <td>#2</td>
+                  <td>readenjoyer91</td>
+                  <td>177 pages</td>
+                </tr>
+                <tr>
+                  <td>#3</td>
+                  <td>spookybooky777</td>
+                  <td>103 pages</td>
+                </tr>
+              </table>
+            </section>
+          </div>
+        </div>
+
+        <h1 class="main__title">Good Morning</h1>
+
+        <section class="recommended section">
+          <h2 class="section__title">Top of a month</h2>
+          <div class="recommended__wrapper">
+            <ul class="recommended__list" id="popularBooksList"></ul>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer__content">
+          <div class="footer__column">
+            <h4 class="footer__title">MyLib</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">About Us</a></li>
+              <li>
+                <a
+                  href="https://www.yakaboo.ua/faq?srsltid=AfmBOopPAo-_k2o_8tyxQzv33578wklR_v4r9LDgLUZ9xo0mNC3uznJg"
+                  class="footer__link"
+                  >FAQ</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer__link">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__title">Contact</h4>
+            <ul class="footer__list">
+              <li>
+                Email:
+                <a href="mailto:support@mylib.com" class="footer__link"
+                  >support@mylib.com</a
+                >
+              </li>
+              <li>Phone: +1 234 567 890</li>
+              <li>Location: Booktown, USA</li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__title">Follow Us</h4>
+            <ul class="footer__list footer__socials">
+              <li>
+                <a href="https://www.facebook.com/" class="footer__link"
+                  >Facebook</a
+                >
+              </li>
+              <li><a href="https://x.com/" class="footer__link">Twitter</a></li>
+              <li>
+                <a href="https://www.instagram.com/" class="footer__link"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2025 MyLib. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/js/bookRender.js"></script>
+  </body>
+</html>

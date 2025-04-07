@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Your personal library profile" />
+    <meta name="keywords" content="Profile, Library, Books, Reading" />
+    <meta name="author" content="Danil Zozulia" />
+    <meta http-equiv="refresh" content="600" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile - MyLib</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="page">
+    <div class="container">
+      <header class="header">
+        <a class="logo" href="index.html">MyLib</a>
+        <a href="./search.html" class="header__link">Search</a>
+        <nav class="header__nav">
+          <div class="dropdown">
+            <a class="header__link" href="profile.html">Profile</a>
+            <div class="dropdown__menu">
+              <a href="./profile.html">Settings</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="main">
+        <h1 class="main__title">My Profile</h1>
+
+        <div class="stats-grid">
+          <section class="stats user-info section">
+            <div class="user-info__wrapper">
+              <div class="user-info__avatar">
+                <img
+                  src="img/profile-picture.webp"
+                  alt="User Avatar"
+                  class="user-info__img"
+                />
+                <label for="avatar-upload" class="btn">
+                  Change Photo
+                  <input
+                    type="file"
+                    id="avatar-upload"
+                    accept="image/*"
+                    hidden
+                  />
+                </label>
+              </div>
+              <div class="user-info__details">
+                <form class="user-info__form">
+                  <div class="form-group">
+                    <label for="username">Username</label>
+                    <input
+                      type="text"
+                      id="username"
+                      value="booklover123"
+                      readonly
+                      class="form-input"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      value="booklover123@example.com"
+                      readonly
+                      class="form-input"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="bio">Bio</label>
+                    <textarea id="bio" class="form-input" readonly rows="3">
+Avid reader and coffee enthusiast. Always chasing the next great story.
+</textarea
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label>Joined</label>
+                    <p class="form-static">January 15, 2023</p>
+                  </div>
+                  <div class="form-group stats-summary">
+                    <p><strong>Books Read:</strong> 42</p>
+                    <p><strong>Total Pages:</strong> 12,345</p>
+                  </div>
+                  <button type="submit" class="btn" disabled>
+                    Save Changes
+                  </button>
+                </form>
+              </div>
+            </div>
+          </section>
+
+          <div class="right-column">
+            <aside class="quote">
+              <h3 class="quote__title">Your Favorite Quote</h3>
+              <p class="quote__description">
+                “A room without books is like a body without a soul.”
+              </p>
+              <p class="quote__author">- Marcus Tullius Cicero</p>
+            </aside>
+
+            <section class="stats section">
+              <h2 class="section__title">Reading Stats</h2>
+              <table class="stats__table">
+                <tr>
+                  <td>This Week</td>
+                  <td>120 pages</td>
+                </tr>
+                <tr>
+                  <td>This Month</td>
+                  <td>450 pages</td>
+                </tr>
+                <tr>
+                  <td>This Year</td>
+                  <td>5,678 pages</td>
+                </tr>
+              </table>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer__content">
+          <div class="footer__column">
+            <h4 class="footer__title">MyLib</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">About Us</a></li>
+              <li>
+                <a
+                  href="https://www.yakaboo.ua/faq?srsltid=AfmBOopPAo-_k2o_8tyxQzv33578wklR_v4r9LDgLUZ9xo0mNC3uznJg"
+                  class="footer__link"
+                  >FAQ</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer__link">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__title">Contact</h4>
+            <ul class="footer__list">
+              <li>
+                Email:
+                <a href="mailto:support@mylib.com" class="footer__link"
+                  >support@mylib.com</a
+                >
+              </li>
+              <li>Phone: +1 234 567 890</li>
+              <li>Location: Booktown, USA</li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__title">Follow Us</h4>
+            <ul class="footer__list footer__socials">
+              <li>
+                <a href="https://www.facebook.com/" class="footer__link"
+                  >Facebook</a
+                >
+              </li>
+              <li><a href="https://x.com/" class="footer__link">Twitter</a></li>
+              <li>
+                <a href="https://www.instagram.com/" class="footer__link"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>© 2025 MyLib. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/js/bookRender.js"></script>
+  </body>
+</html>
