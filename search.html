@@ -21,13 +21,21 @@
       <header class="header">
         <nav class="header__nav">
           <a class="logo" href="index.html">MyLib</a>
-          <a href="./search.html" class="header__link"> Search </a>
-          <div class="dropdown">
-            <a class="header__link" href="./profile.html">Profile</a>
-            <div class="dropdown__menu">
-              <a href="./profile.html">Settings</a>
-              <a href="#">Logout</a>
+          <div class="header__menu">
+            <a href="./search.html" class="header__link">Search</a>
+            <div class="dropdown">
+              <a class="header__link" href="./profile.html">Profile</a>
+              <div class="dropdown__menu">
+                <a href="./profile.html">Settings</a>
+                <a href="#">Logout</a>
+              </div>
             </div>
+          </div>
+          <div
+            class="burger"
+            onclick="document.querySelector('.header__menu').classList.toggle('active')"
+          >
+            <span></span>
           </div>
         </nav>
       </header>
@@ -151,7 +159,9 @@
         </div>
       </footer>
     </div>
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Go to top"></button>
 
+    <script src="/js/scrollToTop.js"></script>
     <script src="/js/bookRender.js"></script>
   </body>
 </html>
