@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Read any book you want!" />
+    <meta name="keywords" content="Book, Read, Online, EBook, Library" />
+    <meta name="author" content="Danil Zozulia" />
+    <meta http-equiv="refresh" content="600" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Resize Text</title>
+  </head>
+  <body style="position: relative">
+    <div class="container">
+      <h1>Block 1</h1>
+
+      <div class="task">
+        <h2>1. Font Resize</h2>
+        <div>
+          <p id="string-to-resize"></p>
+        </div>
+        <form onsubmit="handleForm1(event)">
+          <input type="text" id="text" placeholder="String to resize" />
+          <input type="number" id="size1" placeholder="Font size (px)" />
+          <input type="submit" value="Resize" />
+        </form>
+      </div>
+
+      <div class="task">
+        <h2>2. Moving Image</h2>
+        <div id="moving-img">
+          <img
+            src="./img/placeholder.jpg"
+            width="50"
+            height="50"
+            alt="moving"
+          />
+        </div>
+        <button
+          style="width: 120px"
+          class="btn"
+          type="submit"
+          id="move-image"
+          onclick="moveImage()"
+        >
+          Move image
+        </button>
+      </div>
+
+      <div class="task">
+        <h2>3. Resize Paragraphs</h2>
+        <p>aaaa</p>
+        <p>bbbb</p>
+
+        <form onsubmit="handleForm2(event)">
+          <input type="number" id="size2" placeholder="Font size (px)" />
+          <input type="submit" value="Resize" />
+        </form>
+      </div>
+
+      <div class="task">
+        <h2>4. Text Clock</h2>
+        <p id="clock"></p>
+      </div>
+
+      <div class="task">
+        <h2>5. Wipe Effect</h2>
+        <div id="wipe-effect">Text to dissapear</div>
+        <button
+          style="width: 70px"
+          class="btn"
+          type="submit"
+          id="move-image"
+          onclick="wipeContent()"
+        >
+          Wipe
+        </button>
+      </div>
+
+      <h1>Block 2</h1>
+
+      <div class="task">
+        <h2>3. Color List</h2>
+        <div style="display: flex; gap: 100px">
+          <div id="color-list" style="cursor: pointer">
+            <ul>
+              <li onclick="changeSquareColor('red')">Red</li>
+              <li onclick="changeSquareColor('green')">Green</li>
+              <li onclick="changeSquareColor('blue')">Blue</li>
+              <li onclick="changeSquareColor('yellow')">Yellow</li>
+              <li onclick="changeSquareColor('purple')">Purple</li>
+            </ul>
+          </div>
+          <div
+            id="color-square"
+            style="width: 100px; height: 100px; background-color: black"
+          ></div>
+        </div>
+      </div>
+
+      <div class="task">
+        <h2>4. Mouse and Keyboard Info</h2>
+        <div
+          id="info"
+          style="
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+          "
+        >
+          Move mouse or press a key...
+        </div>
+      </div>
+
+      <div class="task">
+        <h2>5. Font Size with Cookies</h2>
+        <div id="resizable-text">This is a resizable text</div>
+        <button style="width: 50px" class="btn" onclick="increaseFont()">
+          A+
+        </button>
+        <button style="width: 50px" class="btn" onclick="decreaseFont()">
+          A-
+        </button>
+      </div>
+
+      <div class="task">
+        <h2>10. HTML View Ban</h2>
+        <p>Try to open DevTools</p>
+      </div>
+      <h1>Block 3</h1>
+
+      <div class="task">
+        <h2>1. Ad Banner with Hide for a Day</h2>
+        <div
+          id="ad-banner"
+          class="visually-hidden"
+          style="
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 500px;
+            height: 150px;
+            padding: 10px;
+            background-color: rgb(0, 255, 174);
+          "
+        >
+          <span>Very important ad, spend all your money on our site!</span>
+          <button
+            class="btn"
+            style="
+              position: absolute !important;
+              bottom: 10px !important;
+              right: 10px !important;
+              width: 90px;
+            "
+            onclick="removeAd()"
+          >
+            Remove
+          </button>
+        </div>
+      </div>
+
+      <div class="task">
+        <h2>6. Copy Protection</h2>
+        <p id="protected-text">Text to copy</p>
+      </div>
+    </div>
+    <script src="./js/3lw.js"></script>
+  </body>
+</html>

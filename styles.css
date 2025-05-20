@@ -9,6 +9,10 @@ a {
   color: inherit;
 }
 
+ul {
+  list-style: none;
+}
+
 body,
 .page {
   font-family: Inter, sans-serif;
@@ -655,4 +659,18 @@ body,
   .footer__content {
     gap: 60px;
   }
+}
+#moving-img {
+  display: block;
+  width: 50px;
+  z-index: 100;
+}
+
+#wipe-effect {
+  overflow: hidden;
+  position: relative;
+}
+
+.task {
+  margin-bottom: 30px;
 }
