@@ -9,49 +9,140 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <style>
-      .block {
-        background-color: #adb5bd;
-        outline: 1px solid #495057;
-        padding: 20px;
-        text-align: center;
-        margin-bottom: 10px;
-      }
-    </style>
-    <title>Bootstrap</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Guest - MyLib</title>
   </head>
 
   <body class="p-3">
-    <!-- Row 1 -->
-    <div class="row mb-3">
-      <div class="col-lg-4 col-md-2 col-12 block">Block 1.1</div>
-      <div class="col-lg-4 col-md-2 col-12 block">Block 1.2</div>
-      <div class="col-lg-4 col-md-2 col-12 block">Block 1.3</div>
-    </div>
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-lg-4 col-md-2 col-12 category">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <h3 class="card-title">Children's Books</h3>
+              <p class="card-text">
+                Colorful adventures for young readers. Perfect for sparking
+                imagination!
+              </p>
+              <a href="./search.html" class="btn-primary btn">Explore Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-2 col-12 category">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <h3 class="card-title">Bestsellers</h3>
+              <p class="card-text">
+                Dive into the latest chart-topping novels loved by readers
+                worldwide.
+              </p>
+              <a href="./search.html" class="btn-primary btn"
+                >Browse Bestsellers</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-2 col-12 category">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <h3 class="card-title">Crime Fiction</h3>
+              <p class="card-text">
+                Unravel thrilling mysteries and suspenseful plots with our top
+                crime novels.
+              </p>
+              <a href="./search.html" class="btn-primary btn"
+                >Solve the Mystery</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <!-- Row 2 -->
-    <div class="row">
-      <div class="col-lg-6 col-sm-12 block">Block 2.1</div>
+      <div class="row mb-4">
+        <div class="col-lg-6 col-sm-12 weeklytop">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h2 class="card-title">Weekly Popular Genres</h2>
+              <p class="card-text">
+                Check out the genres trending this week among our readers. Find
+                your next favorite book!
+              </p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Fantasy: Epic tales of magic and adventure
+                </li>
+                <li class="list-group-item">
+                  Drama: Heartfelt stories that resonate
+                </li>
+                <li class="list-group-item">
+                  Sci-Fi: Explore new worlds and ideas
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-4 genres">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                  <h4 class="card-title">Fantasy</h4>
+                  <p class="card-text">Immerse yourself in magical realms.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 d-none d-sm-block genres">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                  <h4 class="card-title">Drama</h4>
+                  <p class="card-text">Emotional stories that captivate.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <div class="col-lg-6">
-        <div class="row">
-          <div class="col-4 block">Nested 2.2.1</div>
-          <div class="col-4 block d-none d-sm-block">Nested 2.2.2</div>
+      <div class="row">
+        <div class="col-lg-5 col-12 p-0">
+          <div class="d-none d-sm-block category">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h2 class="card-title">Our Partners</h2>
+                <p class="card-text">
+                  What could be better than reading your favorite book over a
+                  can of delicious, soft, fizzy drink? We are extremely grateful
+                  to our sponsors for helping us spread the cult of reading to
+                  the masses.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-block d-sm-none category invisible">Empty</div>
+        </div>
+        <div class="col-lg-3 col-6 partner offset-lg-0 mt-lg-0 mt-2">
+          <a
+            href="https://www.coca-cola.com/ua/uk/brands/coca-cola"
+            class="card img-wrapper shadow-sm"
+          >
+            <img
+              src="./img/partner1.png"
+              class="card-img-top"
+              alt="Partner 1 Logo"
+            />
+          </a>
+        </div>
+        <div class="col-lg-4 col-6 partner offset-lg-0 mt-lg-0 mt-2">
+          <a href="https://www.pepsi.com/" class="card img-wrapper shadow-sm">
+            <img
+              src="./img/partner2.jpeg"
+              class="card-img-top"
+              alt="Partner 2 Logo"
+            />
+          </a>
         </div>
       </div>
     </div>
-
-    <!-- Row 3 -->
-    <div class="row">
-      <div class="col-lg-5 col-12 p-0">
-        <div class="d-none d-sm-block block">Block 3.1</div>
-        <div class="d-block d-sm-none block invisible">Empty</div>
-      </div>
-
-      <div class="col-lg-3 col-6 block offset-lg-0 mt-lg-0 mt-2">Block 3.2</div>
-      <div class="col-lg-4 col-6 block mt-lg-0 mt-2">Block 3.3</div>
-    </div>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
